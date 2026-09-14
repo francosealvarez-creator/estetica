@@ -1,0 +1,279 @@
+:root {
+    --color-gris: #ccc;
+    --color-fondo: #F5F5F5;
+    --color-primario: #5C17A6;
+    --color-primario-hover: #430F7D;
+    --color-secundario: #0B3C49;
+    --color-secundario-hover: #062933;
+    --color-texto: #262626;
+    --familia-texto: arial;
+    --tamaño-texto: 16px;
+    --tamaño-texto-l: 20px;
+    --gap-xs: 5px;
+    --gap-s: 10px;
+    --gap: 15px;
+    --gap-l: 25px;
+    --radius: 10px;
+    --radius-s: 5px;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--familia-texto);
+    font-size: var(--tamaño-texto);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--color-primario);
+}
+
+a:hover {
+    color: var(--color-primario-hover);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: var(--gap-l);
+}
+
+h1 {
+    color: var(--color-primario);
+    font-size: calc(var(--tamaño-texto) * 3);
+}
+
+h2 {
+    color: var(--color-primario);
+    font-size: calc(var(--tamaño-texto) * 1.7);
+}
+
+h3 {
+    margin-bottom: var(--gap-s);
+}
+
+p {
+    margin-bottom: var(--gap);
+}
+
+ul {
+    padding-left: var(--gap-l);
+}
+
+li {
+    margin-bottom: var(--gap-xs);
+}
+
+table {
+    border: 1px solid var(--color-texto);
+    width: 100%;
+    text-align: center;
+}
+
+th {
+    border: 1px solid var(--color-texto);
+    padding: var(--tamaño-texto);
+}
+
+td {
+    border: 1px solid var(--color-texto);
+    padding: var(--gap);
+}
+
+tfoot {
+    font-weight: 600;
+}
+
+
+footer {
+    text-align: center;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+.texto-izq {
+    text-align: left;
+}
+
+.text-der {
+    text-align: right;
+}
+
+.lista-limpia {
+    padding-left: 0;
+    list-style: none;
+}
+
+.lista-menu {
+    display: flex;
+    gap: var(--gap-s);
+    justify-content: center;
+}
+
+.lista-menu li a {
+    text-decoration: none;
+}
+
+.lista-menu li a:hover {
+    text-decoration: underline;
+}
+
+/* SISTEMAS GRILLA */
+
+.display-grid {
+    display: grid;
+    gap: var(--gap);
+}
+
+.display-grid-l {
+    gap: var(--gap-l);
+}
+
+.display-grid-2 {
+    grid-template-columns: repeat(2,1fr);
+}
+
+.display-grid-3 {
+    grid-template-columns: repeat(3,1fr);
+}
+
+.display-grid-4 {
+    grid-template-columns: repeat(4,1fr);
+}
+
+/* AJUSTES DE IMAGENES */
+
+.img-cover {
+    object-fit: cover;
+}
+
+
+.boton {
+    padding: var(--gap-s) var(--gap) var(--gap-s) var(--gap); /* Arriba, derecha, abajo e izquierda */
+    display: inline-block;
+    border-radius: var(--radius-s);
+    text-decoration: none;
+}
+
+.boton-l {
+    font-size: var(--tamaño-texto-l);
+    padding: var(--gap) var(--gap-l) var(--gap) var(--gap-l);
+}
+
+.boton-primario {
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.boton-primario:hover {
+    color: white;
+    background-color: var(--color-primario-hover);
+}
+
+.boton-secundario {
+    background-color: var(--color-secundario);
+    color: white;
+}
+
+.boton-secundario:hover {
+    color: white;
+    background-color: var(--color-secundario-hover);
+}
+.contenedor {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: var(--gap);
+    
+    /* border: 1px solid var(--color-texto);
+    border-radius: var(--tamaño-texto);*/
+}
+
+.cabezal {
+    background-color: var(--color-gris);
+    border-radius: var(--radius);
+    padding: var(--gap);
+}
+
+.seccion {
+    padding-top: var(--gap-l);
+    padding-bottom: var(--gap-l);
+}
+
+.grilla-flex {
+    display: flex;
+    gap: var(--gap);
+}
+
+.icono-titulo {
+    width: 30px;
+    height: 30px;
+
+}
+
+.pie-de-pagina {
+    background-color: var(--color-gris);
+    border-radius: var(--radius);
+    padding: var(--gap);
+}
+
+.separacion-redes {
+    margin-top: var(--tamaño-texto);
+    margin-bottom: var(--tamaño-texto);
+}
+
+.tabla-precios {
+    margin-bottom: var(--tamaño-texto);
+}
+
+/* PAGINA PORTFOLIO */
+
+#proyectosDestacados {
+    margin-top: var(--tamaño-texto);
+}
+
+#proyectosDestacados .caso-exito {
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+    margin-bottom: var(--gap-l);
+    background-color: var(--color-gris);
+    padding: var(--gap);
+    border-radius: var(--radius);
+}
+
+.caso-exito img{
+    max-width: 40%;
+}
+
+/* PAGINA NOSOTROS */
+
+#nosotrosEquipoGrilla img {
+    height: 300px;
+}
+
+#nosotrosEquipoGrilla #luciaGomez img {
+    object-position: 0 20%;
+}
+
+#historia h2 {
+    margin-top: var(--tamaño-texto);
+}
+
+
+/* PAGINA BLOG */
+
+#blog img {
+    height: 200px;
+}
