@@ -1,11 +1,11 @@
 :root {
-    --color-gris: #ccc;
-    --color-fondo: #F5F5F5;
-    --color-primario: #5C17A6;
-    --color-primario-hover: #430F7D;
-    --color-secundario: #0B3C49;
-    --color-secundario-hover: #062933;
-    --color-texto: #262626;
+    --color-gris: #C2C5CB;
+    --color-fondo: #EEEBE0;
+    --color-primario: #635E55;
+    --color-primario-hover: #4D4942;
+    --color-secundario: #E2D1C2;
+    --color-secundario-hover: #D6C2B0;
+    --color-texto: #322F2B;
     --familia-texto: arial;
     --tamaño-texto: 16px;
     --tamaño-texto-l: 20px;
