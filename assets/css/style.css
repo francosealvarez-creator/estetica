@@ -1,5 +1,5 @@
 :root {
-    --color-gris: #C2C5CB;
+    --color-gris: #FFFFFF;
     --color-fondo: #EEEBE0;
     --color-primario: #635E55;
     --color-primario-hover: #4D4942;
@@ -15,6 +15,17 @@
     --gap-l: 25px;
     --radius: 10px;
     --radius-s: 5px;
+    --margin: 20px;
+    --margin-xs: 10px;
+    --margin-s: 15px;
+    --margin: 20px;
+    --margin-l: 25px;
+    --margin-xl: 35px;
+    --padding: 20px;
+    --padding-xs: 10px;
+    --padding-s: 15px;
+    --padding: 20px;
+    --padding-l: 25px;
     
 }
 
@@ -33,10 +44,13 @@ body {
 img {
     width: 100%;
     height: auto;
+    border-radius: 10px;
+    margin-bottom: var(--margin-l);
 }
 
 a {
     color: var(--color-primario);
+    text-decoration: none;
 }
 
 a:hover {
@@ -44,7 +58,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: var(--gap-l);
+    margin-bottom: var(--margin-xl);
 }
 
 h1 {
@@ -113,6 +127,12 @@ footer {
 .lista-limpia {
     padding-left: 0;
     list-style: none;
+    margin: 20px 0;
+    
+}
+
+.lista-limpia li {
+    margin-bottom: var(--margin-xs);
 }
 
 .lista-menu {
@@ -233,47 +253,41 @@ footer {
     margin-bottom: var(--tamaño-texto);
 }
 
-.tabla-precios {
-    margin-bottom: var(--tamaño-texto);
+/* SISTEMAS DE MARGIN Y PADDING */
+
+.margin {
+    margin: var(--margin);
 }
 
-/* PAGINA PORTFOLIO */
-
-#proyectosDestacados {
-    margin-top: var(--tamaño-texto);
+.margin-xs {
+    margin: var(--margin-xs);
 }
 
-#proyectosDestacados .caso-exito {
-    display: flex;
-    align-items: center;
-    gap: var(--gap);
-    margin-bottom: var(--gap-l);
-    background-color: var(--color-gris);
-    padding: var(--gap);
-    border-radius: var(--radius);
+.margin-s {
+    margin: var(--margin-s);
 }
 
-.caso-exito img{
-    max-width: 40%;
+.margin-l {
+    margin: var(--margin-l);
 }
 
-/* PAGINA NOSOTROS */
-
-#nosotrosEquipoGrilla img {
-    height: 300px;
+.margin-xl {
+    margin: var(--margin-xl);
 }
 
-#nosotrosEquipoGrilla #luciaGomez img {
-    object-position: 0 20%;
+.padding {
+    padding: var(--padding);
 }
 
-#historia h2 {
-    margin-top: var(--tamaño-texto);
+.padding-xs{
+    padding: var(--padding-xs);
 }
 
-
-/* PAGINA BLOG */
-
-#blog img {
-    height: 200px;
+.padding-s {
+    padding: var(--padding-s);
 }
+
+.padding-l {
+    padding: var(--padding-l);
+}
+
