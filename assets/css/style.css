@@ -46,7 +46,6 @@ img {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    margin-bottom: var(--margin-l);
 }
 
 a {
@@ -59,7 +58,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin-bottom: var(--margin-xl);
+    margin-bottom: var(--gap-l);
     font-family: var(--fuente-titulos);
 }
 
@@ -223,12 +222,17 @@ footer {
 }
 
 .cabezal {
-    background-color: var(--color-gris);
-    border-radius: var(--radius);
     padding: var(--gap);
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.marca {
+    font-family: var(--fuente-titulos);
+    font-size: var(--tamaño-texto-l);
+    font-weight: 600;
+    color: var(--color-primario);
 }
 
 .seccion {
@@ -244,6 +248,8 @@ footer {
 .icono-review {
     width: 50px;
     height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
 
 }
 
@@ -260,40 +266,85 @@ footer {
 
 /* SISTEMAS DE MARGIN Y PADDING */
 
-.margin {
+.margin-bottom {
     margin: var(--margin);
 }
 
-.margin-xs {
+.margin-bottom-xs {
     margin: var(--margin-xs);
 }
 
-.margin-s {
+.margin-bottom-s {
     margin: var(--margin-s);
 }
 
-.margin-l {
+.margin-bottom-l {
     margin: var(--margin-l);
 }
 
-.margin-xl {
+.margin-bottom-xl {
     margin: var(--margin-xl);
 }
 
-.padding {
+.margin-top {
+    margin: var(--margin);
+}
+
+.margin-top-xs {
+    margin: var(--margin-xs);
+}
+
+.margin-top-s {
+    margin: var(--margin-s);
+}
+
+.margin-top-l {
+    margin: var(--margin-l);
+}
+
+.margin-top-xl {
+    margin: var(--margin-xl);
+}
+
+.padding-bottom {
     padding: var(--padding);
 }
 
-.padding-xs{
+.padding-bottom-xs{
     padding: var(--padding-xs);
 }
 
-.padding-s {
+.padding-bottom-s {
     padding: var(--padding-s);
 }
 
-.padding-l {
+.padding-bottom-l {
     padding: var(--padding-l);
+}
+
+.padding-top {
+    padding: var(--padding);
+}
+
+.padding-top-xs{
+    padding: var(--padding-xs);
+}
+
+.padding-top-s {
+    padding: var(--padding-s);
+}
+
+.padding-top-l {
+    padding: var(--padding-l);
+}
+
+/* TESTIMONIOS */
+
+.tarjeta-testimonios {
+    background-color: var(--color-gris);
+    border-radius: var(--radius);
+    padding: var(--padding);
+    text-align: center;
 }
 
 #cabezal ul{
