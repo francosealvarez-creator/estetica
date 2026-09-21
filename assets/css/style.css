@@ -14,19 +14,9 @@
     --gap-s: 10px;
     --gap: 15px;
     --gap-l: 25px;
+    --gap-xl: 40px;
     --radius: 10px;
     --radius-s: 5px;
-    --margin: 20px;
-    --margin-xs: 10px;
-    --margin-s: 15px;
-    --margin: 20px;
-    --margin-l: 25px;
-    --margin-xl: 35px;
-    --padding: 20px;
-    --padding-xs: 10px;
-    --padding-s: 15px;
-    --padding: 20px;
-    --padding-l: 25px;
     
 }
 
@@ -108,28 +98,30 @@ tfoot {
     font-weight: 600;
 }
 
-
-footer {
-    text-align: center;
-}
-
 .texto-centrado {
     text-align: center;
 }
 
-.texto-izq {
+.texto-izquierda {
     text-align: left;
 }
 
-.text-der {
+.texto-derecha {
     text-align: right;
+}
+
+.texto-balanceado {
+    text-wrap: balance;
 }
 
 .lista-limpia {
     padding-left: 0;
     list-style: none;
     margin: 20px 0;
-    
+}
+
+.lista-puntos {
+    margin: 20px 0;
 }
 
 .lista-limpia li {
@@ -140,6 +132,12 @@ footer {
     display: flex;
     gap: var(--gap-s);
     justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    list-style: none;
+}
+.lista-menu li {
+    margin-bottom: 0;
 }
 
 .lista-menu li a {
@@ -222,7 +220,6 @@ footer {
 }
 
 .cabezal {
-    padding: var(--gap);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -238,6 +235,11 @@ footer {
 .seccion {
     padding-top: var(--gap-l);
     padding-bottom: var(--gap-l);
+}
+
+.seccion-xl {
+    padding-top: var(--gap-xl);
+    padding-bottom: var(--gap-xl);
 }
 
 .grilla-flex {
@@ -267,75 +269,75 @@ footer {
 /* SISTEMAS DE MARGIN Y PADDING */
 
 .margin-bottom {
-    margin: var(--margin);
+    margin-bottom:  var(--gap);
 }
 
 .margin-bottom-xs {
-    margin: var(--margin-xs);
+    margin-bottom:  var(--gap-xs);
 }
 
 .margin-bottom-s {
-    margin: var(--margin-s);
+    margin-bottom:  var(--gap-s);
 }
 
 .margin-bottom-l {
-    margin: var(--margin-l);
+    margin-bottom:  var(--gap-l);
 }
 
 .margin-bottom-xl {
-    margin: var(--margin-xl);
+    margin-bottom:  var(--gap-xl);
 }
 
 .margin-top {
-    margin: var(--margin);
+    margin-top:  var(--gap);
 }
 
 .margin-top-xs {
-    margin: var(--margin-xs);
+    margin-top:  var(--gap-xs);
 }
 
 .margin-top-s {
-    margin: var(--margin-s);
+    margin-top:  var(--gap-s);
 }
 
 .margin-top-l {
-    margin: var(--margin-l);
+    margin-top:  var(--gap-l);
 }
 
 .margin-top-xl {
-    margin: var(--margin-xl);
+    margin-top:  var(--gap-xl);
 }
 
 .padding-bottom {
-    padding: var(--padding);
+    padding-bottom:  var(--gap);
 }
 
 .padding-bottom-xs{
-    padding: var(--padding-xs);
+    padding-bottom:  var(--gap-xs);
 }
 
 .padding-bottom-s {
-    padding: var(--padding-s);
+    padding-bottom:  var(--gap-s);
 }
 
 .padding-bottom-l {
-    padding: var(--padding-l);
+    padding-bottom:  var(--gap-l);
 }
 
 .padding-top {
-    padding: var(--padding);
+    padding-top:  var(--gap);
 }
 
 .padding-top-xs{
-    padding: var(--padding-xs);
+    padding-top:  var(--gap-xs);
 }
 
 .padding-top-s {
-    padding: var(--padding-s);
+    padding-top:  var(--gap-s);
 }
 
 .padding-top-l {
-    padding: var(--padding-l);
+    padding-top:  var(--gap-l);
 }
 
 /* TESTIMONIOS */
@@ -343,11 +345,6 @@ footer {
 .tarjeta-testimonios {
     background-color: var(--color-gris);
     border-radius: var(--radius);
-    padding: var(--padding);
-    text-align: center;
-}
-
-#cabezal ul{
-    align-items: center;
+    padding: var(--gap);
 }
 
