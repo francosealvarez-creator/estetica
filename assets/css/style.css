@@ -209,7 +209,7 @@ footer {
 
 .boton-secundario:hover {
     color: white;
-    background-color: var(--color-secundario-hover);
+    background-color: var(--color-primario-hover);
 }
 .contenedor {
     max-width: 1200px;
