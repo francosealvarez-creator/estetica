@@ -17,7 +17,7 @@
     --gap-xl: 40px;
     --radius: 10px;
     --radius-s: 5px;
-    
+    --radius-l: 100px;
 }
 
 * {
@@ -35,7 +35,7 @@ body {
 img {
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: var(--radius);
 }
 
 a {
@@ -179,9 +179,9 @@ tfoot {
 
 
 .boton {
-    padding: var(--gap-s) var(--gap) var(--gap-s) var(--gap); /* Arriba, derecha, abajo e izquierda */
+    padding: var(--gap-s) var(--gap-l) var(--gap-s) var(--gap-l); /* Arriba, derecha, abajo e izquierda */
     display: inline-block;
-    border-radius: var(--radius-s);
+    border-radius: var(--radius-l);
     text-decoration: none;
 }
 
@@ -196,8 +196,8 @@ tfoot {
 }
 
 .boton-primario:hover {
-    color: white;
     background-color: var(--color-primario-hover);
+    color: white;  
 }
 
 .boton-secundario {
@@ -206,8 +206,8 @@ tfoot {
 }
 
 .boton-secundario:hover {
-    color: white;
-    background-color: var(--color-primario-hover);
+    background-color: var(--color-secundario-hover);
+    color: var(--color-primario-hover);  
 }
 .contenedor {
     max-width: 1200px;
