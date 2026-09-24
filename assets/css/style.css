@@ -66,6 +66,10 @@ h3 {
     margin-bottom: var(--gap-s);
 }
 
+h4 {
+    margin-bottom: 0;
+}
+
 p {
     margin-bottom: var(--gap);
 }
