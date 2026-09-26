@@ -173,6 +173,7 @@ tfoot {
 
 .display-grid-4 {
     grid-template-columns: repeat(4,1fr);
+    gap: var(--gap-xl);
 }
 
 /* AJUSTES DE IMAGENES */
@@ -350,5 +351,13 @@ tfoot {
     background-color: var(--color-gris);
     border-radius: var(--radius);
     padding: var(--gap);
+}
+
+.fila-review {
+    align-items: center;
+}
+
+.fila-review img {
+    margin: 0;
 }
 
