@@ -15,6 +15,7 @@
     --gap: 15px;
     --gap-l: 25px;
     --gap-xl: 40px;
+    --gap-xxl: 70px;
     --radius: 10px;
     --radius-s: 5px;
     --radius-l: 100px;
@@ -169,6 +170,7 @@ tfoot {
 
 .display-grid-3 {
     grid-template-columns: repeat(3,1fr);
+    gap: var(--gap-xl);
 }
 
 .display-grid-4 {
@@ -261,9 +263,6 @@ tfoot {
 }
 
 .pie-de-pagina {
-    background-color: var(--color-gris);
-    border-radius: var(--radius);
-    padding: var(--gap);
 }
 
 .pie-de-pagina p {
@@ -276,7 +275,7 @@ tfoot {
     margin-bottom: var(--tamaño-texto);
 }
 
-/* SISTEMAS DE MARGIN Y PADDING */
+/* SISTEMA DE MARGIN Y PADDING */
 
 .margin-bottom {
     margin-bottom:  var(--gap);
@@ -296,6 +295,10 @@ tfoot {
 
 .margin-bottom-xl {
     margin-bottom:  var(--gap-xl);
+}
+
+.margin-bottom-xxl {
+    margin-bottom: var(--gap-xxl);
 }
 
 .margin-top {
@@ -366,3 +369,9 @@ tfoot {
     margin: 0;
 }
 
+/* TRATAMIENTOS */
+
+.consulta {
+    background-color: #635E55;
+    padding: 0;
+}
