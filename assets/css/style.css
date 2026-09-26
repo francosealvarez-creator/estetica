@@ -266,6 +266,11 @@ tfoot {
     padding: var(--gap);
 }
 
+.pie-de-pagina p {
+    margin-bottom: 0;
+    
+}
+
 .separacion-redes {
     margin-top: var(--tamaño-texto);
     margin-bottom: var(--tamaño-texto);
