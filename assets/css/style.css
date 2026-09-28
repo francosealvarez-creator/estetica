@@ -1,11 +1,13 @@
 :root {
-    --color-gris: #FFFFFF;
-    --color-fondo: #EEEBE0;
     --color-primario: #635E55;
     --color-primario-hover: #4D4942;
     --color-secundario: #E2D1C2;
     --color-secundario-hover: #D6C2B0;
-    --color-texto: #322F2B;
+    --color-claro: white;
+    --color-oscuro: #333;
+    --color-gris: #EEE;
+    --color-texto: var(--color-oscuro);
+    --color-fondo: #EEEBE0;
     --fuente-titulos: 'Playfair Display', serif;
     --fuente-textos: 'Montserrat', sans-serif;
     --tamaño-texto: 16px;
@@ -31,6 +33,7 @@ body {
     color: var(--color-texto);
     font-family: var(--fuente-textos);
     font-size: var(--tamaño-texto);
+    line-height: 1.3;
 }
 
 img {
@@ -46,6 +49,7 @@ a {
 
 a:hover {
     color: var(--color-primario-hover);
+    text-decoration: underline;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -113,6 +117,10 @@ tfoot {
 
 .texto-derecha {
     text-align: right;
+}
+
+.texto-bajada {
+    font-size: var(--tamaño-texto-l);
 }
 
 .texto-balanceado {
@@ -192,6 +200,10 @@ tfoot {
     text-decoration: none;
 }
 
+.boton:hover {
+    text-decoration: none;
+}
+
 .boton-l {
     font-size: var(--tamaño-texto-l);
     padding: var(--gap) var(--gap-l) var(--gap) var(--gap-l);
@@ -220,13 +232,13 @@ tfoot {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding: var(--gap);
+    padding: 0 var(--gap);
     
     /* border: 1px solid var(--color-texto);
     border-radius: var(--tamaño-texto);*/
 }
 
-.cabezal {
+.cabezal .contenedor {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -238,6 +250,30 @@ tfoot {
     font-weight: 600;
     color: var(--color-primario);
 }
+
+/* SISTEMA COLORES DE FONDO */
+
+.fondo-primario {
+    background-color: var(--color-primario);
+}
+
+.fondo-primario * {
+    color: var(--color-claro);
+}
+
+.fondo-secundario {
+    background-color: var(--color-secundario);
+}
+
+.fondo-oscuro {
+    background-color: var(--color-oscuro);
+}
+
+.fondo-oscuro * {
+    color: var(--color-claro);
+}
+
+/* SISTEMAS DE SECCIONES */
 
 .seccion {
     padding-top: var(--gap-l);
@@ -262,23 +298,10 @@ tfoot {
 
 }
 
-.pie-de-pagina {
-    padding: var(--gap);
+/* #pieDePagina {
     border-top-left-radius: var(--radius);
     border-top-right-radius: var(--radius);
-    background-color: var(--color-primario);
-    color: white;
-}
-
-.pie-de-pagina a {
-    color: white;
-}
-
-.pie-de-pagina p {
-    margin-bottom: 0;
-}
-
-
+} */
 
 .separacion-redes {
     margin-top: var(--tamaño-texto);
@@ -286,6 +309,18 @@ tfoot {
 }
 
 /* SISTEMA DE MARGIN Y PADDING */
+
+.margin-cero {
+    margin: 0;
+}
+
+.margin-bottom-cero {
+    margin-bottom: 0;
+}
+
+.margin-top-cero {
+    margin-top: 0;
+}
 
 .margin-bottom {
     margin-bottom:  var(--gap);
@@ -366,7 +401,7 @@ tfoot {
 /* TESTIMONIOS */
 
 .tarjeta-testimonios {
-    background-color: var(--color-gris);
+    background-color: var(--color-claro);
     border-radius: var(--radius);
     padding: var(--gap);
 }
@@ -377,19 +412,3 @@ tfoot {
     gap: var(--gap);
 }
 
-/* TRATAMIENTOS */
-
-.consulta {
-    background-color: #635E55;
-    padding: var(--gap-l);
-    color: white;
-}
-
-.consulta a {
-    background-color: var(--color-secundario);
-    color: var(--color-texto);
-}
-
-.consulta h2 {
-    color: var(--color-gris);
-}
