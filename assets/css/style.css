@@ -263,12 +263,22 @@ tfoot {
 }
 
 .pie-de-pagina {
+    padding: var(--gap);
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    background-color: var(--color-primario);
+    color: white;
+}
+
+.pie-de-pagina a {
+    color: white;
 }
 
 .pie-de-pagina p {
     margin-bottom: 0;
-    
 }
+
+
 
 .separacion-redes {
     margin-top: var(--tamaño-texto);
@@ -362,16 +372,24 @@ tfoot {
 }
 
 .fila-review {
+    display: flex;
     align-items: center;
-}
-
-.fila-review img {
-    margin: 0;
+    gap: var(--gap);
 }
 
 /* TRATAMIENTOS */
 
 .consulta {
     background-color: #635E55;
-    padding: 0;
+    padding: var(--gap);
+    color: white;
+}
+
+.consulta a {
+    background-color: var(--color-secundario);
+    color: var(--color-texto);
+}
+
+.consulta h2 {
+    color: var(--color-gris);
 }
