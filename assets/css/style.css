@@ -381,7 +381,7 @@ tfoot {
 
 .consulta {
     background-color: #635E55;
-    padding: var(--gap);
+    padding: var(--gap-l);
     color: white;
 }
 
