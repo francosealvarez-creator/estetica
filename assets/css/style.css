@@ -398,6 +398,12 @@ tfoot {
     padding-top:  var(--gap-l);
 }
 
+/* FOOTER */
+
+#pieDePagina .marca a:hover {
+    color: var(--color-claro);
+}
+
 /* TESTIMONIOS */
 
 .tarjeta-testimonios {
