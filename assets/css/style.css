@@ -141,6 +141,10 @@ tfoot {
     margin-bottom: var(--margin-xs);
 }
 
+.lista-limpia li a:hover {
+    color: var(--color-claro);
+}
+
 .lista-menu {
     display: flex;
     gap: var(--gap-s);
@@ -160,6 +164,7 @@ tfoot {
 .lista-menu li a:hover {
     text-decoration: underline;
 }
+
 
 /* SISTEMAS GRILLA */
 
@@ -249,6 +254,11 @@ tfoot {
     font-size: var(--tamaño-texto-l);
     font-weight: 600;
     color: var(--color-primario);
+}
+
+ #pieDePagina .marca:hover {
+    color: var(--color-claro);
+    text-decoration: none;
 }
 
 /* SISTEMA COLORES DE FONDO */
@@ -400,9 +410,7 @@ tfoot {
 
 /* FOOTER */
 
-#pieDePagina .marca a:hover {
-    color: var(--color-claro);
-}
+
 
 /* TESTIMONIOS */
 
